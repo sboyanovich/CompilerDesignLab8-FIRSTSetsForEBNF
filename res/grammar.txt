@@ -1,0 +1,8 @@
+(Lang)	= (Rule)+ .
+(Rule)	= NON_TERMINAL \= (E) \. .
+(E)	= (C) [ \| (C) ]* .
+(C)	= (F) [ (F) ]* .
+(F)	= (L) [ \+ | \* | \? ]? .
+(L)	= TERMINAL | NON_TERMINAL | \[ (E) \] .
+
+
